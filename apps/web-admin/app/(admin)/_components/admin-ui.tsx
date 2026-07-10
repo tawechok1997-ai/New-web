@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Link from 'next/link';
 
 type PageProps = { eyebrow?: string; title: string; description?: string; actions?: ReactNode; children: ReactNode };
 type CardProps = { title?: string; description?: string; action?: ReactNode; children: ReactNode; tone?: SurfaceTone };
@@ -33,7 +34,7 @@ export function AdminButton({ children, onClick, type = 'button', disabled, tone
 }
 
 export function AdminLinkButton({ children, href, tone = 'secondary' }: { children: ReactNode; href: string; tone?: 'primary' | 'secondary' }) {
-  return <a href={href} style={{ ...buttonBaseStyle, ...buttonToneStyle[tone], textDecoration: 'none' }}>{children}</a>;
+  return <Link href={href} style={{ ...buttonBaseStyle, ...buttonToneStyle[tone], textDecoration: 'none' }}>{children}</Link>;
 }
 
 export function AdminBadge({ children, tone = 'neutral' }: { children: ReactNode; tone?: BadgeTone }) {
