@@ -25,7 +25,7 @@
 .member-feature-disabled__badge{justify-self:center;border:1px solid color-mix(in srgb,var(--color-brand) 42%,transparent);border-radius:999px;padding:8px 12px;font-weight:950;font-size:13px;color:var(--color-brand);background:color-mix(in srgb,var(--color-brand) 8%,transparent)}
 .member-feature-disabled h1{margin:0;font-size:34px;line-height:1.05}
 .member-feature-disabled p{margin:0}
-.member-loading-screen{min-height:100dvh;display:grid;place-items:center;background:var(--color-bg);color:var(--color-text);padding:16px}
+.member-loading-screen{min-height:100dvh;display:grid;place-items:center;background:var(--color-bg);color:var(--color-text);padding:16px}.member-loading-card{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 18px;border:1px solid var(--color-border);border-radius:16px;background:var(--color-surface);font-weight:850;box-shadow:var(--shadow-card)}.member-loading-spinner{width:18px;height:18px;border:2px solid color-mix(in srgb,var(--color-brand) 25%,transparent);border-top-color:var(--color-brand);border-radius:50%;animation:memberSpinner .8s linear infinite}@keyframes memberSpinner{to{transform:rotate(360deg)}}
 .member-maintenance__eyebrow{margin:0;opacity:.68}
 .member-maintenance h1{margin:8px 0;font-size:clamp(34px,10vw,60px);line-height:1}
 .member-maintenance p:last-child{margin:0;opacity:.78}
