@@ -33,6 +33,11 @@
 button:disabled,input:disabled,textarea:disabled,select:disabled{cursor:not-allowed;opacity:.58}
 .admin-content-shell>main{animation:adminPageIn .5s cubic-bezier(.2,.8,.2,1) both}
 .admin-content-shell>main section,.admin-content-shell>main form{animation:adminSurfaceIn .48s cubic-bezier(.2,.8,.2,1) both}
+.admin-page__header{position:relative}
+.admin-surface{transform-origin:center top;will-change:transform}
+.admin-surface:hover{transform:translateY(-2px);border-color:rgba(245,197,66,.28)!important;box-shadow:0 24px 60px rgba(0,0,0,.2)!important}
+.admin-metric:hover{transform:translateY(-3px) scale(1.01)}
+.admin-page__actions{display:flex;gap:10px;flex-wrap:wrap}
 .admin-content-shell>main button,.admin-content-shell>main a{transition:transform .18s ease,filter .18s ease,box-shadow .18s ease,border-color .18s ease}
 .admin-content-shell>main button:hover:not(:disabled),.admin-content-shell>main a[style*="background"]:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 12px 28px rgba(0,0,0,.22)}
 .admin-content-shell>main button:active:not(:disabled),.admin-content-shell>main a[style*="background"]:active{transform:translateY(0) scale(.985)}
