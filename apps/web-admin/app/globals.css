@@ -31,6 +31,15 @@
 
 :where(a,button,input,textarea,select):focus-visible{outline:3px solid color-mix(in srgb,var(--brand) 78%,white);outline-offset:3px}
 button:disabled,input:disabled,textarea:disabled,select:disabled{cursor:not-allowed;opacity:.58}
+.admin-content-shell>main{animation:adminPageIn .5s cubic-bezier(.2,.8,.2,1) both}
+.admin-content-shell>main section,.admin-content-shell>main form{animation:adminSurfaceIn .48s cubic-bezier(.2,.8,.2,1) both}
+.admin-content-shell>main button,.admin-content-shell>main a{transition:transform .18s ease,filter .18s ease,box-shadow .18s ease,border-color .18s ease}
+.admin-content-shell>main button:hover:not(:disabled),.admin-content-shell>main a[style*="background"]:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.admin-content-shell>main button:active:not(:disabled),.admin-content-shell>main a[style*="background"]:active{transform:translateY(0) scale(.985)}
+.admin-drawer-nav a{transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease}
+.admin-drawer-nav a:hover{transform:translateX(3px)}
+@keyframes adminPageIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes adminSurfaceIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .admin-drawer{visibility:hidden}
 .admin-drawer.open{visibility:visible}
 @media(min-width:1024px){.admin-shell-drawer-mode>.admin-drawer{visibility:visible}}
