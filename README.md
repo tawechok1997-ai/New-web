@@ -21,6 +21,8 @@
   <a href="#-project-status">Status</a>
 </p>
 
+<p><a href="README.th.md">🇹🇭 อ่านภาษาไทย</a></p>
+
 </div>
 
 ---
